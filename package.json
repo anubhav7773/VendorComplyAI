@@ -7,6 +7,7 @@
   "license": "UNLICENSED",
   "packageManager": "pnpm@9.1.0",
   "scripts": {
+    "build": "pnpm --filter web build",
     "dev:web": "pnpm --filter web dev",
     "build:web": "pnpm --filter web build",
     "start:web": "pnpm --filter web start",
