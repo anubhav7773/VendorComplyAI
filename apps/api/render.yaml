@@ -6,6 +6,7 @@ services:
     dockerContext: apps/api
     plan: free
     region: singapore # Closest low-latency node for India (aws-ap-south-1)
+    healthCheckPath: /health
     envVars:
       - key: ENVIRONMENT
         value: production
@@ -16,7 +17,9 @@ services:
       - key: PARENT_COMPANY
         value: "asiverticals.me"
       - key: ALLOWED_ORIGINS
-        value: '["https://vendorcomply.asiverticals.me", "https://vendorcomply.pages.dev"]'
+        value: '["https://vendorcomply.asiverticals.me", "https://vendorcomply.pages.dev", "http://localhost:3000"]'
+      - key: CORS_ORIGIN_REGEX
+        value: '^https:\/\/([a-zA-Z0-9_-]+\.)*(asiverticals\.me|pages\.dev)$|^http:\/\/localhost(:\d+)?$'
       - key: DEFAULT_CORPORATE_TAX_RATE
         value: "0.25168"
       - key: DEFAULT_GST_RATE_PERCENT
@@ -26,10 +29,18 @@ services:
       - key: AGENT_HMAC_MASTER_KEY
         generateValue: true
       - key: DATABASE_URL
-        sync: false
+        value: ""
+      - key: DIRECT_DATABASE_URL
+        value: ""
       - key: SUPABASE_URL
-        sync: false
+        value: ""
+      - key: SUPABASE_ANON_KEY
+        value: ""
       - key: SUPABASE_SERVICE_ROLE_KEY
-        sync: false
+        value: ""
+      - key: SUPABASE_JWT_SECRET
+        value: ""
       - key: GEMINI_API_KEY
-        sync: false
+        value: ""
+      - key: USE_LOCAL_VLM
+        value: "false"

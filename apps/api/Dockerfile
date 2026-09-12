@@ -18,9 +18,10 @@ FROM python:3.11-slim as runner
 
 WORKDIR /app
 
-# Install runtime libraries required by PyMuPDF and Pillow
+# Install runtime libraries required by PyMuPDF, Pillow, and container healthcheck
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libmupdf-dev \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy installed python wheels from builder
@@ -39,6 +40,6 @@ USER appuser
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD curl -f http://localhost:8000/api/v1/health || exit 1
+    CMD curl -f http://localhost:8000/health || exit 1
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]

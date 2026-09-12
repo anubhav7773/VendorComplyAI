@@ -12,9 +12,17 @@ class Settings(BaseSettings):
     APP_NAME: str = Field(default="VendorComply AI Engine")
     PARENT_COMPANY: str = Field(default="asiverticals.me")
 
-    # Allowed CORS Origins
+    # Allowed CORS Origins & Dynamic Regex
     ALLOWED_ORIGINS: List[str] = Field(
-        default=["https://vendorcomply.asiverticals.me", "http://localhost:3000"]
+        default=[
+            "https://vendorcomply.asiverticals.me",
+            "https://vendorcomply.pages.dev",
+            "http://localhost:3000",
+            "http://localhost:8000",
+        ]
+    )
+    CORS_ORIGIN_REGEX: str = Field(
+        default=r"^https:\/\/([a-zA-Z0-9_-]+\.)*(asiverticals\.me|pages\.dev)$|^http:\/\/localhost(:\d+)?$"
     )
 
     # Statutory Default Values
@@ -27,11 +35,22 @@ class Settings(BaseSettings):
     # RBI Bank Rate (Current baseline: 6.50% p.a.; Section 16 Penal Rate = 3x = 19.50% p.a.)
     CURRENT_RBI_BANK_RATE: Decimal = Field(default=Decimal("0.0650"))
 
-    # Security Keys
+    # Database & Supabase Settings (safe fallback defaults to prevent startup crash)
+    DATABASE_URL: str = Field(default="")
+    DIRECT_DATABASE_URL: str = Field(default="")
     SUPABASE_URL: str = Field(default="")
+    SUPABASE_ANON_KEY: str = Field(default="")
     SUPABASE_SERVICE_ROLE_KEY: str = Field(default="")
     SUPABASE_JWT_SECRET: str = Field(default="")
-    AGENT_HMAC_MASTER_KEY: str = Field(default="dev-insecure-hmac-key-replace-in-prod-64chars")
+
+    # Gemini Cloud OCR Engine Settings
+    GEMINI_API_KEY: str = Field(default="")
+    USE_LOCAL_VLM: bool = Field(default=False)
+
+    # On-Premise Agent Security Salt
+    AGENT_HMAC_MASTER_KEY: str = Field(
+        default="dev-insecure-hmac-key-replace-in-prod-64chars"
+    )
 
     model_config = SettingsConfigDict(
         env_file=".env",
