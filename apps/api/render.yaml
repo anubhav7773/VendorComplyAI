@@ -28,18 +28,20 @@ services:
         value: "0.0650"
       - key: AGENT_HMAC_MASTER_KEY
         generateValue: true
-      - key: DATABASE_URL
-        value: ""
-      - key: DIRECT_DATABASE_URL
-        value: ""
+      - key: SUPABASE_PROJECT_REF
+        value: "tcrazmftnldmzsffttne"
       - key: SUPABASE_URL
-        value: ""
+        value: "https://tcrazmftnldmzsffttne.supabase.co"
       - key: SUPABASE_ANON_KEY
-        value: ""
+        value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRjcmF6bWZ0bmxkbXpzZmZ0dG5lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkxODU1OTcsImV4cCI6MjEwNDc2MTU5N30.vnAHmrKRTzih9-e8GtKNwozb9uyMIkqZVbYjW2N4_UM"
       - key: SUPABASE_SERVICE_ROLE_KEY
         value: ""
       - key: SUPABASE_JWT_SECRET
         value: ""
+      - key: DATABASE_URL
+        value: "postgresql://postgres.tcrazmftnldmzsffttne:[YOUR-PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:6543/postgres?sslmode=require"
+      - key: DIRECT_DATABASE_URL
+        value: "postgresql://postgres.tcrazmftnldmzsffttne:[YOUR-PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
       - key: GEMINI_API_KEY
         value: ""
       - key: USE_LOCAL_VLM
