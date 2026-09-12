@@ -1,0 +1,10 @@
+{
+  "name": "@vendorcomply/database",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PostgreSQL Schema, RLS Policies and Migrations for VendorComply AI",
+  "scripts": {
+    "migrate:local": "supabase migration up",
+    "reset:local": "supabase db reset"
+  }
+}

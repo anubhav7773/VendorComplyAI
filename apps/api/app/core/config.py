@@ -1,0 +1,44 @@
+# apps/api/app/core/config.py
+
+from decimal import Decimal
+from typing import List
+from pydantic import Field
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class Settings(BaseSettings):
+    ENVIRONMENT: str = Field(default="development")
+    DEBUG: bool = Field(default=False)
+    APP_NAME: str = Field(default="VendorComply AI Engine")
+    PARENT_COMPANY: str = Field(default="asiverticals.me")
+
+    # Allowed CORS Origins
+    ALLOWED_ORIGINS: List[str] = Field(
+        default=["https://vendorcomply.asiverticals.me", "http://localhost:3000"]
+    )
+
+    # Statutory Default Values
+    # Section 115BAA corporate tax rate (22% base + 10% surcharge + 4% cess = 25.168%)
+    DEFAULT_CORPORATE_TAX_RATE: Decimal = Field(default=Decimal("0.25168"))
+    
+    # Default GST Rate for ITC disallowance extraction
+    DEFAULT_GST_RATE_PERCENT: Decimal = Field(default=Decimal("18.0"))
+    
+    # RBI Bank Rate (Current baseline: 6.50% p.a.; Section 16 Penal Rate = 3x = 19.50% p.a.)
+    CURRENT_RBI_BANK_RATE: Decimal = Field(default=Decimal("0.0650"))
+
+    # Security Keys
+    SUPABASE_URL: str = Field(default="")
+    SUPABASE_SERVICE_ROLE_KEY: str = Field(default="")
+    SUPABASE_JWT_SECRET: str = Field(default="")
+    AGENT_HMAC_MASTER_KEY: str = Field(default="dev-insecure-hmac-key-replace-in-prod-64chars")
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        case_sensitive=True,
+        extra="ignore"
+    )
+
+
+settings = Settings()

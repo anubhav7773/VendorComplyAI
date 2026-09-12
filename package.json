@@ -1,0 +1,22 @@
+{
+  "name": "vendorcomply-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production B2B SaaS Platform for Section 43B(h) MSME Statutory Compliance",
+  "author": "asiverticals.me",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@9.1.0",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "start:web": "pnpm --filter web start",
+    "lint:web": "pnpm --filter web lint",
+    "db:migrate": "supabase db push",
+    "test:api": "cd apps/api && pytest -v",
+    "test:agent": "cd apps/agent && python -m unittest discover tests"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}

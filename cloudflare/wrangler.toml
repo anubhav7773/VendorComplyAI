@@ -1,0 +1,10 @@
+name = "vendorcomply-edge-worker"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+BACKEND_ORIGIN = "https://api-vendorcomply.onrender.com"
+
+# Keep-alive cron trigger: executes every 10 minutes to defeat Render cold starts
+[triggers]
+crons = ["*/10 * * * *"]

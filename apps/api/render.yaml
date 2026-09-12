@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: api-vendorcomply
+    runtime: docker
+    dockerfilePath: apps/api/Dockerfile
+    dockerContext: apps/api
+    plan: free
+    region: singapore # Closest low-latency node for India (aws-ap-south-1)
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: APP_NAME
+        value: "VendorComply AI Statutory Engine"
+      - key: PARENT_COMPANY
+        value: "asiverticals.me"
+      - key: ALLOWED_ORIGINS
+        value: '["https://vendorcomply.asiverticals.me", "https://vendorcomply.pages.dev"]'
+      - key: DEFAULT_CORPORATE_TAX_RATE
+        value: "0.25168"
+      - key: DEFAULT_GST_RATE_PERCENT
+        value: "18.0"
+      - key: CURRENT_RBI_BANK_RATE
+        value: "0.0650"
+      - key: AGENT_HMAC_MASTER_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

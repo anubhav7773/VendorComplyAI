@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#dce9ff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#3f465c", "on-background": "#0b1c30", "tertiary": "#0051d5", "secondary-fixed": "#dae2fd", "inverse-on-surface": "#eaf1ff", "on-error-container": "#93000a", "inverse-primary": "#68dba9", "primary": "#006948", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "inverse-surface": "#213145", "secondary": "#565e74", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "tertiary-fixed": "#dbe1ff", "error-container": "#ffdad6", "secondary-container": "#dae2fd", "primary-fixed-dim": "#68dba9", "outline": "#6d7a72", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#003ea8", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#005137", "primary-container": "#00855d", "surface-container": "#e5eeff", "surface-container-highest": "#d3e4fe", "error": "#ba1a1a", "on-primary-fixed": "#002114", "tertiary-fixed-dim": "#b4c5ff", "tertiary-container": "#316bf3", "surface-tint": "#006c4a", "surface-container-low": "#eff4ff", "surface-bright": "#f8f9ff", "on-surface-variant": "#3d4a42", "on-primary-container": "#f5fff7", "background": "#f8f9ff", "surface": "#f8f9ff", "on-secondary-container": "#5c647a", "on-secondary-fixed": "#131b2e", "outline-variant": "#bccac0", "primary-fixed": "#85f8c4", "on-surface": "#0b1c30", "surface-variant": "#d3e4fe", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#00174b" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.25rem", "space-md": "0.75rem", "space-sm": "0.5rem", "margin-md": "1.5rem", "gutter": "1rem", "space-xl": "2rem", "margin": "1rem", "space-2xs": "0.125rem", "space-2xl": "3rem", "gutter-md": "1.5rem", "gutter-lg": "2rem", "margin-lg": "2.5rem" }, "fontFamily": { "headline-xl-mobile": [ "Hanken Grotesk" ], "data-tabular-md": [ "JetBrains Mono" ], "body-md": [ "Hanken Grotesk" ], "display-lg": [ "Hanken Grotesk" ], "data-tabular-sm": [ "JetBrains Mono" ], "label-md": [ "Hanken Grotesk" ], "headline-sm": [ "Hanken Grotesk" ], "headline-lg": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "display-lg-mobile": [ "Hanken Grotesk" ], "label-sm": [ "Hanken Grotesk" ], "data-tabular-lg": [ "JetBrains Mono" ], "headline-xl": [ "Hanken Grotesk" ], "headline-md": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ] }, "fontSize": { "headline-xl-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "data-tabular-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "data-tabular-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.025em", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "data-tabular-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-xl": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm border-b border-outline-variant/20 bg-surface-container-lowest"><img alt="VendorComply AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOS9K_DLZSk8UVTTV43TOCNwg2NfPzioegyZo1Qld8EmqFkXsFHuw0haGDzDCeMt7mOWv7hZ9_g3tW6Y6x4o4vAJOembm3mPmU3C0OIuZX9WcoqY3vBcijWlwlBw3n3LMWVo30TyQsgYFACFYWfHxm0AJmtGElRS1HNip2GEIrRMkQuh_6BOtFeTb3lxqfGT4PHe6TZ7MDX7Pwk9Akyaeak1w4AdLjf5LWtXcGMS8VcuJ1qx7T432dqfAe"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">VendorComply AI</span><span class="font-label-sm text-label-sm text-secondary truncate tracking-tight">asiverticals.me</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-xs py-space-2xs"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MSME Governance</span></div></div><nav class="px-space-sm flex flex-col gap-space-2xs" data-active-classes="bg-primary text-on-primary font-semibold"><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="aging-radar-payables" href="#">Aging Radar &amp; Payables</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="msme-udyam-verification" href="#">Udyam Verification</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="disbursements-payout-execution" href="#">Disbursements &amp; Payouts</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="interest-ledger-sec-16" href="#">Interest Ledger (Sec 16)</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="tax-disallowance-simulator" href="#">Tax Disallowance (43B)</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="audit-vault-certificates" href="#">Audit Vault &amp; Proofs</a><a class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm truncate" data-path="settings-erp-connect" href="#">Settings &amp; ERP Connect</a></nav></div><div class="p-space-md border-t border-outline-variant/20 bg-surface-container-lowest"><div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-space-2xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary font-semibold">Statutory Engine</span><span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Section 43B(h) Active Rule 2026</p></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 z-40 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-md flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-secondary truncate"><span class="hover:text-on-surface transition-colors cursor-pointer">MSME Governance</span><span class="material-symbols-outlined text-sm leading-none">chevron_right</span><span class="hover:text-on-surface transition-colors cursor-pointer">Banking Settlement</span><span class="material-symbols-outlined text-sm leading-none">chevron_right</span><span class="text-on-surface font-semibold truncate">Monday Morning Batch Settlement Run #2026-W37</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center"><div class="flex items-center gap-space-xs bg-surface-container-low border border-outline-variant/40 rounded-lg px-space-sm py-space-2xs"><span class="material-symbols-outlined text-sm text-secondary">calendar_month</span><span class="font-label-md text-label-md text-on-surface font-semibold">FY 2026-27 (AY 2027-28)</span><span class="material-symbols-outlined text-sm text-secondary">arrow_drop_down</span></div></div><div class="hidden md:flex items-center gap-space-xs bg-error-container/40 border border-error/20 px-space-sm py-space-2xs rounded-full"><span class="material-symbols-outlined text-sm text-error leading-none">schedule</span><span class="font-data-tabular-sm text-data-tabular-sm text-on-error-container font-semibold tracking-tight">March 31 Cutoff: 200 Days</span></div><button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-semibold transition-colors shadow-[0_1px_2px_rgba(0,105,72,0.2)]" type="button"><span class="material-symbols-outlined text-base leading-none">sync</span><span class="hidden sm:inline">Run ERP Sync (Tally/SAP)</span></button><div class="relative flex items-center"><button aria-label="Notifications" class="p-space-xs rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-xl leading-none">notifications</span></button><span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></div><div class="h-7 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-2xs"><div class="text-right hidden sm:flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight truncate max-w-[150px]">Priya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight truncate max-w-[150px]">Apex Global Industries</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMk3KoK9_kxaLB-xQbW7jEfI1q26J6wLKYhqMIXUkDp6288LA8Fd8OISRv43Y_Yzr8FBdkVGNmCyM3BCGLYEm8vBg6V19m1CbLBCVNerLOMy96WMY_k_vvG_s2DA5FWNMlSHHOUMDItMmxcQ6PxHybudhsq2SgE0MjAwVKUYtnPmsL6AhfxHEXqHmGGfn1hK4Fk4JjaCZZy4Emln4DD6TIdehkH53Ma4Rc4YOqIA9vFqa0ukvW2ZGuw"/></div></div></div><div class="h-11 px-gutter-md border-t border-outline-variant/20 bg-surface-container-low/40 flex items-center overflow-x-auto"><nav class="flex items-center gap-space-lg h-full" data-active-classes="border-b-2 border-primary text-primary font-semibold"><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="aging-radar-payables" href="#">Aging Radar &amp; Payables</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="msme-udyam-verification" href="#">MSME Udyam Verification</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="disbursements-payout-execution" href="#">Disbursements &amp; Payout Execution</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="interest-ledger-sec-16" href="#">Interest Ledger (Sec 16)</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="tax-disallowance-simulator" href="#">Tax Disallowance Simulator</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="audit-vault-certificates" href="#">Audit Vault &amp; Certificates</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="settings-erp-connect" href="#">Settings &amp; ERP Connect</a></nav></div></header><main class="w-full pt-[108px] px-gutter-md pb-space-2xl bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Operational Intelligence Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">Vendor Master &amp; Dynamic Udyam Verification</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high px-space-xs py-0.5 rounded text-tertiary font-data-tabular-sm text-data-tabular-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+          API v2.4 Active
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+        Real-time Tally Prime / ERP XML connector &amp; MCA / MSME Udyam API synchronization for Section 43B(h) classification
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low text-on-surface border border-outline-variant/40 px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="material-symbols-outlined text-sm text-primary">swap_horiz</span>
+        Sync Tally Creditors (Port 9000)
+      </button>
+<button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-semibold transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">smart_toy</span>
+        Bulk Udyam Verification
+        <span class="bg-primary-container/60 text-on-primary-container text-[10px] px-1.5 py-0.5 rounded font-data-tabular-sm uppercase tracking-wider">AI Crawler</span>
+</button>
+<button class="p-space-xs rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-secondary hover:text-on-surface transition-colors border border-outline-variant/40" title="Export Ledger" type="button">
+<span class="material-symbols-outlined text-lg leading-none">download</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Metric Chips Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Total Active Creditors</span>
+<span class="material-symbols-outlined text-secondary text-base">account_balance</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">148</span>
+<span class="font-label-sm text-label-sm text-secondary">Tally Prime Ledger</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-space-sm">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Udyam Verified</span>
+<span class="material-symbols-outlined text-primary text-base">verified_user</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">136</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-medium">(91.8% Validated)</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-space-sm">
+<div class="bg-primary h-full rounded-full" style="width: 91.8%"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-error/20 bg-error-container/10 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-semibold uppercase tracking-wider">Missing Written Contract</span>
+<span class="material-symbols-outlined text-error text-base">gavel</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-xl text-headline-xl text-error font-bold">29</span>
+<span class="font-label-sm text-label-sm text-error">Default 15-Day Rule</span>
+</div>
+<div class="w-full bg-error-container h-1.5 rounded-full overflow-hidden mt-space-sm">
+<div class="bg-error h-full rounded-full" style="width: 19.5%"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Traders Exempt u/s 43B(h)</span>
+<span class="material-symbols-outlined text-tertiary text-base">shield_with_house</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">18</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary">OM 1/4(1)/2021 Safe</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-space-sm">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 12.1%"></div>
+</div>
+</div>
+</div>
+<!-- Filter & Global Query Bar -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm border border-outline-variant/30 mb-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center flex-1 min-w-[280px] bg-surface-container-low rounded-lg px-space-sm py-1.5">
+<span class="material-symbols-outlined text-secondary text-lg mr-space-xs">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none" placeholder="Search by Vendor Name, PAN, GSTIN, or Udyam Reg (e.g. Precision, 27AAAC...)" type="text" value=""/>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary bg-surface-container px-1 rounded">⌘K</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto py-1">
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/30">
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm font-semibold bg-surface-container-lowest text-on-surface shadow-xs">All (148)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface">Micro (84)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface">Small (34)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface">Medium (18)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface">Traders Exempt (18)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-error hover:text-on-surface flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-error"></span>
+          Pending (12)
+        </button>
+</div>
+<div class="h-6 w-px bg-outline-variant/30 hidden sm:block"></div>
+<button class="inline-flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-colors border border-outline-variant/30" type="button">
+<span class="material-symbols-outlined text-sm">filter_list</span>
+        Rule: 15-Day Risk Only
+      </button>
+</div>
+</div>
+<!-- Main Split Layout (Table Canvas + Inspection Drawer) -->
+<div class="flex flex-col 2xl:flex-row gap-space-md items-start w-full relative">
+<!-- Vendor Master Registry Data Table -->
+<div class="flex-1 w-full overflow-hidden bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm flex flex-col">
+<div class="px-space-md py-space-sm border-b border-outline-variant/20 flex items-center justify-between bg-surface-container-low/20">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Statutory Ledger Master</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">Showing 1-7 of 148 Accounts</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary">Auto-sync with Tally:</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold flex items-center gap-1">
+<span class="h-2 w-2 rounded-full bg-primary"></span>
+            ODBC Connected
+          </span>
+</div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full border-collapse text-left">
+<thead>
+<tr class="bg-surface-container-low/50 border-b border-outline-variant/30 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-md font-semibold">Vendor Legal Entity</th>
+<th class="py-2.5 px-space-sm font-semibold">Tax IDs (PAN / GSTIN)</th>
+<th class="py-2.5 px-space-sm font-semibold">Udyam Registration</th>
+<th class="py-2.5 px-space-sm font-semibold">MSME Class</th>
+<th class="py-2.5 px-space-sm font-semibold">Activity Status</th>
+<th class="py-2.5 px-space-sm font-semibold">Sec 15 Default Rule</th>
+<th class="py-2.5 px-space-md text-right font-semibold">Open Payables</th>
+<th class="py-2.5 px-space-sm text-center font-semibold">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-body-sm text-body-sm">
+<!-- Row 1: Selected Vendor (Precision Tooling & Castings) -->
+<tr class="bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer border-l-4 border-l-primary">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-8 w-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-semibold font-data-tabular-sm text-data-tabular-sm">
+                    PT
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Precision Tooling &amp; Castings Pvt Ltd</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Pune Industrial Area, Maharashtra</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-data-tabular-sm text-data-tabular-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                    AAACP8492K
+                    <span class="material-symbols-outlined text-[13px] text-primary" title="PAN Verified via MCA">check_circle</span>
+</span>
+<span class="text-secondary text-[10px]">27AAACP8492K1ZF</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+                    UDYAM-MH-02-0049182
+                  </span>
+<span class="text-[10px] text-secondary">Verified: 12-Feb-2026</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  Micro
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+                  Manufacturer
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">warning</span>
+                  15 Days (No Agmt)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-data-tabular-sm text-data-tabular-sm">
+<div class="flex flex-col items-end">
+<span class="font-bold text-error">₹32,50,000</span>
+<span class="text-[10px] text-secondary">3 Invoices (1 Past Due)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<button class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold hover:underline" type="button">
+                  Inspecting
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Devika Chemical Logistics -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-8 w-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary font-semibold font-data-tabular-sm text-data-tabular-sm">
+                    DC
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Devika Chemical Logistics LLP</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Ankleshwar, Gujarat</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-data-tabular-sm text-data-tabular-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                    ABGFD2219M
+                    <span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+</span>
+<span class="text-secondary text-[10px]">24ABGFD2219M1Z9</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+                    UDYAM-GJ-01-0083210
+                  </span>
+<span class="text-[10px] text-secondary">Verified: 08-Jan-2026</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+                  Small
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm font-medium">
+                  Service Provider
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+                  45 Days (Written Agmt)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-data-tabular-sm text-data-tabular-sm">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface">₹14,20,500</span>
+<span class="text-[10px] text-secondary">2 Invoices</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<button class="p-1 text-secondary hover:text-on-surface rounded" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Synergy Metal Traders (Trader Exempt) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-8 w-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary font-semibold font-data-tabular-sm text-data-tabular-sm">
+                    SM
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Synergy Metal Traders Corp</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Loha Mandi, Delhi</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-data-tabular-sm text-data-tabular-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                    BHYPC9012L
+                    <span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+</span>
+<span class="text-secondary text-[10px]">07BHYPC9012L1ZK</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span>
+                    UDYAM-DL-03-0012984
+                  </span>
+<span class="text-[10px] text-secondary">Verified: 24-Dec-2025</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Medium
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-medium" title="Exempted from Section 43B(h) as per Office Memorandum 1/4(1)/2021-P&amp;G/Policy">
+<span class="material-symbols-outlined text-xs text-secondary">gavel</span>
+                  Trader (43Bh Exempt)
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">
+                  Standard 60 Days
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-data-tabular-sm text-data-tabular-sm">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface">₹68,40,000</span>
+<span class="text-[10px] text-secondary">5 Invoices</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<button class="p-1 text-secondary hover:text-on-surface rounded" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Kalka Packaging Industries -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-8 w-8 rounded-lg bg-surface-container flex items-center justify-center text-primary font-semibold font-data-tabular-sm text-data-tabular-sm">
+                    KP
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Kalka Corrugated Packaging</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Baddi, Himachal Pradesh</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-data-tabular-sm text-data-tabular-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                    CZZPK4491D
+                    <span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+</span>
+<span class="text-secondary text-[10px]">02CZZPK4491D1Z4</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+                    UDYAM-HP-01-0033281
+                  </span>
+<span class="text-[10px] text-secondary">Verified: 19-Feb-2026</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  Micro
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+                  Manufacturer
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">warning</span>
+                  15 Days (No Agmt)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-data-tabular-sm text-data-tabular-sm">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface">₹8,75,400</span>
+<span class="text-[10px] text-secondary">1 Invoice</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<button class="p-1 text-secondary hover:text-on-surface rounded" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Narmada Electro-Plastics -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-8 w-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary font-semibold font-data-tabular-sm text-data-tabular-sm">
+                    NE
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Narmada Electro-Plastics Ltd</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Indore, Madhya Pradesh</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-data-tabular-sm text-data-tabular-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                    AAECN9910Q
+                    <span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+</span>
+<span class="text-secondary text-[10px]">23AAECN9910Q1ZS</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+                    UDYAM-MP-08-0094511
+                  </span>
+<span class="text-[10px] text-secondary">Verified: 03-Feb-2026</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+                  Small
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+                  Manufacturer
+                </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+                  45 Days (Written Agmt)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-data-tabular-sm text-data-tabular-sm">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface">₹21,15,000</span>
+<span class="text-[10px] text-secondary">4 Invoices</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<button class="p-1 text-secondary hover:text-on-surface rounded" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Zen Precision Seals (Pending Udyam Verification) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="h-8 w-8 rounded-lg bg-surface-container flex items-center justify-center text-error font-semibold font-data-tabular-sm text-data-tabular-sm">
+                    ZP
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Zen Precision Seals LLP</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">Bengaluru, Karnataka</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-data-tabular-sm text-data-tabular-sm">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                    AAGFZ1102P
+                    <span class="material-symbols-outlined text-[13px] text-secondary">help</span>
+</span>
+<span class="text-secondary text-[10px]">29AAGFZ1102P1ZT</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-error"></span>
+                    Verification Pending
+                  </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-sm text-label-sm text-secondary italic">Awaiting API</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-sm text-label-sm text-secondary italic">Unverified</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">
+                  15 Days (Safety Lock)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-data-tabular-sm text-data-tabular-sm">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface">₹4,90,000</span>
+<span class="text-[10px] text-secondary">1 Invoice</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<button class="px-2 py-1 bg-surface-container text-on-surface font-label-sm text-label-sm rounded hover:bg-surface-container-high transition-colors" type="button">
+                  Verify Now
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Bottom Ledger Controls -->
+<div class="px-space-md py-space-sm bg-surface-container-low/30 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-secondary">
+<div class="flex items-center gap-space-xs">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest border border-outline-variant/30 rounded px-1.5 py-0.5 text-on-surface text-xs focus:outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+<span class="ml-2">1–7 of 148 items</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-secondary disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="px-2 py-0.5 rounded bg-primary text-on-primary font-semibold">1</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface">2</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface">3</button>
+<span class="px-1 text-secondary">...</span>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container text-on-surface">15</button>
+<button class="p-1 rounded hover:bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Vendor Inspection Sliding Drawer (Docked at 420px) -->
+<div class="w-full 2xl:w-[440px] shrink-0 bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-md flex flex-col overflow-hidden">
+<!-- Drawer Header -->
+<div class="p-space-md border-b border-outline-variant/20 bg-surface-container-low/30 flex items-start justify-between">
+<div class="flex flex-col pr-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Statutory Intelligence Dossier</span>
+<span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-0.5">
+            Precision Tooling &amp; Castings Pvt Ltd
+          </span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary mt-0.5">
+            Tally Ledger: #TL-88291 • Maharashtra
+          </span>
+</div>
+<button class="p-space-xs text-secondary hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<!-- Drawer Content Scroll Area -->
+<div class="p-space-md flex flex-col gap-space-md max-h-[calc(100vh-250px)] overflow-y-auto">
+<!-- Status & Gov Registry Banner -->
+<div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Udyam Active &amp; Validated</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary">UDYAM-MH-02-0049182</span>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm font-semibold rounded-full">
+            Micro
+          </span>
+</div>
+<!-- Section 1: Official Udyam Deep Breakdown -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">MSMED Act Criteria</span>
+<span class="text-primary font-label-sm text-label-sm hover:underline cursor-pointer flex items-center gap-0.5">
+              Gov Udyam Portal
+              <span class="material-symbols-outlined text-xs">open_in_new</span>
+</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low/40 p-space-sm rounded-lg border border-outline-variant/20 font-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Plant &amp; Machinery (WDV)</span>
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-on-surface">₹74.20 Lakhs</span>
+<span class="text-[10px] text-primary">Micro Limit: &lt; ₹1 Cr</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Net Turnover (FY 24-25)</span>
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-on-surface">₹3.82 Crores</span>
+<span class="text-[10px] text-primary">Micro Limit: &lt; ₹5 Cr</span>
+</div>
+<div class="flex flex-col pt-space-xs border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-secondary">Date of Incorporation</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface">14-Apr-2018</span>
+</div>
+<div class="flex flex-col pt-space-xs border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-secondary">MSME Filing Date</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface">02-Nov-2020</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Verified NIC Codes (Critical Section 43B(h) Audit Check) -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">
+            NIC Classification Audit
+          </span>
+<div class="flex flex-col gap-1.5">
+<!-- NIC 1 (Manufacturing) -->
+<div class="p-space-xs bg-surface-container-lowest border border-outline-variant/40 rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">NIC 25910</span>
+<span class="px-1.5 py-0.2 bg-primary/10 text-primary font-label-sm text-label-sm rounded font-medium">Manufacturing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Manufacture of forged, pressed, stamped and roll-formed metal products; powder metallurgy.
+              </p>
+</div>
+<!-- NIC 2 (Trading auxiliary) -->
+<div class="p-space-xs bg-surface-container-lowest border border-outline-variant/40 rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">NIC 46620</span>
+<span class="px-1.5 py-0.2 bg-surface-container text-secondary font-label-sm text-label-sm rounded font-medium">Wholesale Auxiliary</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Wholesale of metals and metal ores.
+              </p>
+</div>
+<!-- Compliance Rule Verdict Callout -->
+<div class="p-space-sm bg-primary/10 rounded-lg border border-primary/20 flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">gavel</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">
+<strong class="font-semibold text-primary">Statutory Rule:</strong> Primary operating activity is <span class="font-semibold">Manufacturing</span>. Exemptions under Circular 1/4(1)/2021 do <em>not</em> apply. Full Section 43B(h) and MSMED Section 15 mandates apply.
+              </p>
+</div>
+</div>
+</div>
+<!-- Section 3: Contract Terms & 15/45-Day Rule Audit -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">Credit Terms &amp; Contract Audit</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">error</span>
+              Agreement Missing
+            </span>
+</div>
+<div class="p-space-sm bg-error-container/20 rounded-lg border border-error/30 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-error">Sec 15 Statutory Default Active</span>
+<span class="font-data-tabular-sm text-data-tabular-sm bg-error text-on-error px-2 py-0.5 rounded font-bold">15 Days Max</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              No bilateral signed contract found in ERP or Document Vault. By law, maximum credit period reduces from 45 days down to <strong class="text-on-surface">15 calendar days</strong> from delivery/invoice.
+            </p>
+<p class="font-label-sm text-label-sm text-error leading-tight">
+              Sec 16 compound interest (RBI Bank Rate × 3 = 19.5% p.a.) starts on Day 16.
+            </p>
+<button class="mt-1 w-full py-1.5 px-space-sm bg-surface-container-lowest hover:bg-surface-container text-on-surface border border-outline-variant/40 rounded font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm text-primary">upload_file</span>
+              Upload Signed Contract (Extend to 45 Days)
+            </button>
+</div>
+</div>
+<!-- Section 4: Payment Turnaround & Linked Vouchers -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">Unsettled Tally Invoices</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-bold">Total: ₹32,50,000</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<!-- Voucher 1 -->
+<div class="p-space-xs rounded-lg border border-error/40 bg-error-container/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">#PUR-26-891</span>
+<span class="text-[10px] text-secondary">Date: 14-Jan-2026</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="px-1.5 py-0.5 rounded bg-error text-on-error font-data-tabular-sm text-data-tabular-sm font-bold">Age: 46 Days</span>
+<span class="text-[10px] text-error font-semibold">Overdue 31d</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">₹18,50,000</span>
+<span class="text-[10px] text-error">Interest: ₹30,684</span>
+</div>
+</div>
+<!-- Voucher 2 -->
+<div class="p-space-xs rounded-lg border border-outline-variant/30 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">#PUR-26-742</span>
+<span class="text-[10px] text-secondary">Date: 20-Feb-2026</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-data-tabular-sm text-data-tabular-sm font-bold">Age: 9 Days</span>
+<span class="text-[10px] text-primary">6 Days Remaining</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">₹9,00,000</span>
+<span class="text-[10px] text-secondary">Safe Horizon</span>
+</div>
+</div>
+<!-- Voucher 3 -->
+<div class="p-space-xs rounded-lg border border-outline-variant/30 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">#PUR-26-709</span>
+<span class="text-[10px] text-secondary">Date: 25-Feb-2026</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-data-tabular-sm text-data-tabular-sm font-bold">Age: 4 Days</span>
+<span class="text-[10px] text-primary">11 Days Remaining</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-data-tabular-sm text-data-tabular-sm font-bold text-on-surface">₹5,00,000</span>
+<span class="text-[10px] text-secondary">Safe Horizon</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Bottom Sticky Action Bar -->
+<div class="p-space-md border-t border-outline-variant/20 bg-surface-container-low/40 flex flex-col gap-space-xs">
+<button class="w-full py-2 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-base">send_and_archive</span>
+          Trigger Vendor Confirmation via WhatsApp &amp; Email
+        </button>
+<button class="w-full py-1.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface border border-outline-variant/40 rounded-lg font-label-md text-label-md font-medium flex items-center justify-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+          Export Audit Dossier (CA Certified PDF)
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

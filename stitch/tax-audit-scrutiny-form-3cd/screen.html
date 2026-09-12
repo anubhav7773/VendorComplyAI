@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#dce9ff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#3f465c", "on-background": "#0b1c30", "tertiary": "#0051d5", "secondary-fixed": "#dae2fd", "inverse-on-surface": "#eaf1ff", "on-error-container": "#93000a", "inverse-primary": "#68dba9", "primary": "#006948", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "inverse-surface": "#213145", "secondary": "#565e74", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "tertiary-fixed": "#dbe1ff", "error-container": "#ffdad6", "secondary-container": "#dae2fd", "primary-fixed-dim": "#68dba9", "outline": "#6d7a72", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#003ea8", "secondary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#005137", "primary-container": "#00855d", "surface-container": "#e5eeff", "surface-container-highest": "#d3e4fe", "error": "#ba1a1a", "on-primary-fixed": "#002114", "tertiary-fixed-dim": "#b4c5ff", "tertiary-container": "#316bf3", "surface-tint": "#006c4a", "surface-container-low": "#eff4ff", "surface-bright": "#f8f9ff", "on-surface-variant": "#3d4a42", "on-primary-container": "#f5fff7", "background": "#f8f9ff", "surface": "#f8f9ff", "on-secondary-container": "#5c647a", "on-secondary-fixed": "#131b2e", "outline-variant": "#bccac0", "primary-fixed": "#85f8c4", "on-surface": "#0b1c30", "surface-variant": "#d3e4fe", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#00174b" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.25rem", "space-md": "0.75rem", "space-sm": "0.5rem", "margin-md": "1.5rem", "gutter": "1rem", "space-xl": "2rem", "margin": "1rem", "space-2xs": "0.125rem", "space-2xl": "3rem", "gutter-md": "1.5rem", "gutter-lg": "2rem", "margin-lg": "2.5rem" }, "fontFamily": { "headline-xl-mobile": [ "Hanken Grotesk" ], "data-tabular-md": [ "JetBrains Mono" ], "body-md": [ "Hanken Grotesk" ], "display-lg": [ "Hanken Grotesk" ], "data-tabular-sm": [ "JetBrains Mono" ], "label-md": [ "Hanken Grotesk" ], "headline-sm": [ "Hanken Grotesk" ], "headline-lg": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "display-lg-mobile": [ "Hanken Grotesk" ], "label-sm": [ "Hanken Grotesk" ], "data-tabular-lg": [ "JetBrains Mono" ], "headline-xl": [ "Hanken Grotesk" ], "headline-md": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ] }, "fontSize": { "headline-xl-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "data-tabular-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "data-tabular-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.025em", "fontWeight": "600" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "data-tabular-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-xl": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm border-b border-outline-variant/20 bg-surface-container-lowest"><img alt="VendorComply AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOS9K_DLZSk8UVTTV43TOCNwg2NfPzioegyZo1Qld8EmqFkXsFHuw0haGDzDCeMt7mOWv7hZ9_g3tW6Y6x4o4vAJOembm3mPmU3C0OIuZX9WcoqY3vBcijWlwlBw3n3LMWVo30TyQsgYFACFYWfHxm0AJmtGElRS1HNip2GEIrRMkQuh_6BOtFeTb3lxqfGT4PHe6TZ7MDX7Pwk9Akyaeak1w4AdLjf5LWtXcGMS8VcuJ1qx7T432dqfAe"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">VendorComply AI</span><span class="font-label-sm text-label-sm text-secondary truncate tracking-tight">asiverticals.me</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-xs py-space-2xs"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">MSME Governance</span></div></div><nav class="px-space-sm flex flex-col gap-space-2xs" data-active-classes="bg-primary text-on-primary font-semibold"><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="aging-radar-payables" href="#"><span class="truncate">Aging Radar &amp; Payables</span></a><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="msme-udyam-verification" href="#"><span class="truncate">MSME Udyam Verification</span></a><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="tax-disallowance-43b" href="#"><span class="truncate">Tax Disallowance (43B)</span></a><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="tax-disallowance-simulator" href="#"><span class="truncate">Tax Disallowance Simulator</span></a><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="interest-ledger-sec-16" href="#"><span class="truncate">Interest Ledger (Sec 16)</span></a><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="audit-vault-proofs" href="#"><span class="truncate">Audit Vault &amp; Proofs</span></a><a class="flex items-center px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="settings-erp-connect" href="#"><span class="truncate">Settings &amp; ERP Connect</span></a></nav></div><div class="p-space-md border-t border-outline-variant/20 bg-surface-container-lowest"><div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-space-2xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary font-semibold">Statutory Engine</span><span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Section 43B(h) Active Rule 2026</p></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 z-40 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-md flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-secondary truncate"><span class="hover:text-on-surface transition-colors cursor-pointer">MSME Compliance Engine</span><span class="material-symbols-outlined text-sm leading-none">chevron_right</span><span class="text-on-surface font-semibold truncate">Section 43B(h) Auditor</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center"><div class="flex items-center gap-space-xs bg-surface-container-low border border-outline-variant/40 rounded-lg px-space-sm py-space-2xs"><span class="material-symbols-outlined text-sm text-secondary">calendar_month</span><span class="font-label-md text-label-md text-on-surface font-semibold">FY 2026-27 (AY 2027-28)</span><span class="material-symbols-outlined text-sm text-secondary">arrow_drop_down</span></div></div><div class="hidden md:flex items-center gap-space-xs bg-error-container/40 border border-error/20 px-space-sm py-space-2xs rounded-full"><span class="material-symbols-outlined text-sm text-error leading-none">schedule</span><span class="font-data-tabular-sm text-data-tabular-sm text-on-error-container font-semibold tracking-tight">March 31 Cutoff: 200 Days</span></div><button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded-lg font-label-md text-label-md font-semibold transition-colors shadow-[0_1px_2px_rgba(0,105,72,0.2)]" type="button"><span class="material-symbols-outlined text-base leading-none">sync</span><span class="hidden sm:inline">Run ERP Sync (Tally/SAP)</span></button><div class="relative flex items-center"><button aria-label="Notifications" class="p-space-xs rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-xl leading-none">notifications</span></button><span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></div><div class="h-7 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-2xs"><div class="text-right hidden sm:flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight truncate max-w-[150px]">Priya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight truncate max-w-[150px]">Apex Global Industries</span></div><img alt="CFO Profile Avatar" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida/AEtjO1Wiz-NESY9iGNfuaDQTfmvpPjNBSX-ZP4Ldi7FPHkkXmAEMNA_AQHiAxhSOF3IEhrOX5-_tP1JozKeRsMKk638WdHn3FfRFyImrRRCyclwFIWCBUjXqsx2ElQhA7JlAb0dEvfwLleYFjM8pqAQwv6YhoijQ-1boLE2DYS9jYDy1fON4pisWRQN5n-G5_IHo_-2yii4oxSdiwH6cMZGWutLyP3yGj-z61tcWL1ZKkD5O0rXwOO323rHJBZE"/></div></div></div><div class="h-11 px-gutter-md border-t border-outline-variant/20 bg-surface-container-low/40 flex items-center overflow-x-auto"><nav class="flex items-center gap-space-lg h-full" data-active-classes="border-b-2 border-primary text-primary font-semibold"><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="aging-radar-payables" href="#">Aging Radar &amp; Payables</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="msme-udyam-verification" href="#">MSME Udyam Verification</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="tax-disallowance-43b" href="#">Tax Disallowance (43B)</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="tax-disallowance-simulator" href="#">Tax Disallowance Simulator</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="interest-ledger-sec-16" href="#">Interest Ledger (Sec 16)</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="audit-vault-proofs" href="#">Audit Vault &amp; Proofs</a><a class="h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap px-space-2xs border-b-2 border-transparent" data-path="settings-erp-connect" href="#">Settings &amp; ERP Connect</a></nav></div></header><main class="w-full pt-[108px] px-gutter-md pb-space-2xl bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP CONTEXT BANNER & PRIMARY ACTIONS -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-space-2xs bg-primary/10 text-primary font-data-tabular-sm text-data-tabular-sm px-space-xs py-space-2xs rounded-full font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          ITR-6 Schedule BP Ready
+        </span>
+<span class="text-secondary font-label-sm text-label-sm">Form 3CD Clause 22 Engine</span>
+<span class="text-outline-variant font-label-sm text-label-sm">·</span>
+<span class="text-secondary font-label-sm text-label-sm">ICAI Standards On Auditing (SA 250)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Tax Audit Scrutiny Engine: Form 3CD Clause 22 MSME Disallowance Generator
+      </h1>
+<p class="font-body-sm text-body-sm text-secondary">
+        Automated Statutory Computation for Corporate Tax Filing FY 2026-27 (AY 2027-28) · Income Tax Act, 1961 read with Section 15, 16 &amp; 22 of MSMED Act, 2006
+      </p>
+</div>
+<!-- Quick CTAs -->
+<div class="flex items-center gap-space-xs shrink-0 flex-wrap">
+<button class="inline-flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-primary text-base">table_view</span>
+<span>Export CA Working Sheet (.XLSX)</span>
+<span class="bg-primary-container text-on-primary-container text-[10px] px-1 rounded font-data-tabular-sm uppercase tracking-wider">Audit Pack</span>
+</button>
+<button class="inline-flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface px-space-md py-space-xs rounded font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-error text-base">picture_as_pdf</span>
+<span>Download Form 3CD Annexure</span>
+</button>
+<button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-xs rounded font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>Lock Computation &amp; Initiate CA Sign-off</span>
+</button>
+</div>
+</div>
+<!-- STATUTORY AUDIT STATUS STRIP -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-lg">event_available</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Statutory Cutoff Status</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold truncate">FY 2026-27 Active (Year-End 31-Mar-2027)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-tertiary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-lg">gavel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Audit Engine Mandate</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold truncate">Section 43B(h) &amp; Section 23 MSMED Compliant</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-8 h-8 rounded bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-lg">database</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Synchronized Data Source</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold truncate">Tally Prime Gold Ledger Audit Trail Verified</span>
+</div>
+</div>
+</div>
+<!-- EXECUTIVE SUMMARY KPI ROW -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Clause 22 Total Disallowance</span>
+<span class="font-data-tabular-sm text-data-tabular-sm px-space-xs py-space-2xs bg-error-container text-on-error-container rounded-full font-semibold">u/s 43B(h)</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-error font-bold font-data-tabular-lg">₹34,20,000</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-space-2xs">Principal amount added back to Net Profit</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low px-space-sm py-space-xs rounded">
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">Tax Impact @ 25.17%:</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-semibold ml-1">+₹8,60,814</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Sec 23 Inadmissible Interest</span>
+<span class="font-data-tabular-sm text-data-tabular-sm px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container rounded-full font-semibold">MSMED 2006</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold font-data-tabular-lg">₹4,85,210</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-space-2xs">100% Inadmissible Deduction u/s 23</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low px-space-sm py-space-xs rounded">
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">Tax Impact:</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-semibold ml-1">+₹1,22,127 Cash Outflow</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Net Tax Outflow Liability</span>
+<span class="font-data-tabular-sm text-data-tabular-sm px-space-xs py-space-2xs bg-primary/10 text-primary rounded-full font-semibold">Combined Impact</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold font-data-tabular-lg">₹9,82,941</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-space-2xs">Combined additional corporate tax liability</p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low px-space-sm py-space-xs rounded flex items-center justify-between">
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary">Total Add-Backs:</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold">₹39,05,210</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Audit Readiness Score</span>
+<span class="font-data-tabular-sm text-data-tabular-sm px-space-xs py-space-2xs bg-primary-fixed text-on-primary-fixed font-semibold rounded-full">High Trust</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-primary font-bold font-data-tabular-lg">98.2%</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-space-2xs">26 / 28 MSME Vouchers Vault-Verified</p>
+</div>
+<div class="mt-space-md w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 98.2%"></div>
+</div>
+</div>
+</div>
+<!-- MAIN SECTION 1: OFFICIAL FORM 3CD CLAUSE 22 STATUTORY DISCLOSURE SCHEDULE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Schedule Header -->
+<div class="p-space-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            Statement of Particulars Required to be Furnished Under Clause 22 of Form No. 3CD
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Particulars of payments made to Micro &amp; Small enterprises beyond the specified period or amount unpaid (Income Tax Act, 1961 Section 44AB)
+        </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-data-tabular-sm text-data-tabular-sm bg-surface-container text-on-surface px-space-sm py-space-2xs rounded">
+          Assessed under AY 2027-28 Rules
+        </span>
+</div>
+</div>
+<!-- Statutory Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high/40">
+<th class="py-space-sm px-space-md font-label-md text-label-md text-secondary uppercase tracking-wider w-24">Clause</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md text-secondary uppercase tracking-wider">Statutory Particulars / Description</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md text-secondary uppercase tracking-wider text-right w-44">Disallowance / Dues (₹)</th>
+<th class="py-space-sm px-space-md font-label-md text-label-md text-secondary uppercase tracking-wider w-80">Audit Observation &amp; Statutory Legal Basis</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<!-- Clause 22(i) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-primary font-semibold align-top">
+              Clause 22(i)
+            </td>
+<td class="py-space-md px-space-md align-top">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold block">
+                The principal amount remaining unpaid to any supplier as at the end of each accounting year
+              </span>
+<span class="font-label-sm text-label-sm text-secondary mt-space-2xs block">
+                Aggregated across 6 Micro / Small enterprise vendors (8 total unpaid purchase invoices)
+              </span>
+</td>
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-error font-bold text-right align-top">
+              ₹34,20,000
+            </td>
+<td class="py-space-md px-space-md align-top">
+<div class="bg-error-container/30 text-on-error-container p-space-xs rounded text-body-sm font-body-sm leading-snug">
+                Unpaid beyond 15/45 days statutory threshold as on 31-Mar-2027. Strictly disallowable u/s 43B(h) for AY 2027-28.
+              </div>
+</td>
+</tr>
+<!-- Clause 22(ii) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-primary font-semibold align-top">
+              Clause 22(ii)
+            </td>
+<td class="py-space-md px-space-md align-top">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold block">
+                The interest due thereon remaining unpaid to any supplier as at the end of each accounting year
+              </span>
+<span class="font-label-sm text-label-sm text-secondary mt-space-2xs block">
+                Computed on compounding monthly rest basis at 3x RBI Bank Repo Rate (19.5% p.a. statutory benchmark)
+              </span>
+</td>
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-on-surface font-bold text-right align-top">
+              ₹4,85,210
+            </td>
+<td class="py-space-md px-space-md align-top">
+<div class="bg-surface-container text-on-surface-variant p-space-xs rounded text-body-sm font-body-sm leading-snug">
+                Mandatory Section 16 MSMED interest accrued; strictly inadmissible as business deduction u/s 23 MSMED Act.
+              </div>
+</td>
+</tr>
+<!-- Clause 22(iii) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-primary font-semibold align-top">
+              Clause 22(iii)
+            </td>
+<td class="py-space-md px-space-md align-top">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold block">
+                The amount of interest paid by the buyer in terms of Section 16 of the MSMED Act, 2006
+              </span>
+<span class="font-label-sm text-label-sm text-secondary mt-space-2xs block">
+                Along with the amount of payment made to the supplier beyond appointed day during the financial year
+              </span>
+</td>
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-on-surface font-bold text-right align-top">
+              ₹1,42,800
+            </td>
+<td class="py-space-md px-space-md align-top">
+<div class="bg-surface-container text-on-surface-variant p-space-xs rounded text-body-sm font-body-sm leading-snug">
+                Principal ₹18,50,000 was settled belatedly during FY 26-27 with penal interest discharged. Disallowed u/s 23.
+              </div>
+</td>
+</tr>
+<!-- Clause 22(iv) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-primary font-semibold align-top">
+              Clause 22(iv)
+            </td>
+<td class="py-space-md px-space-md align-top">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold block">
+                The amount of interest accrued and remaining unpaid at the end of each accounting year
+              </span>
+<span class="font-label-sm text-label-sm text-secondary mt-space-2xs block">
+                Cumulative penal interest provision booked in audited books of account
+              </span>
+</td>
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-on-surface font-bold text-right align-top">
+              ₹4,85,210
+            </td>
+<td class="py-space-md px-space-md align-top">
+<div class="bg-surface-container text-on-surface-variant p-space-xs rounded text-body-sm font-body-sm leading-snug">
+                Cumulative interest payable as reflected in Balance Sheet under Current Statutory Liabilities.
+              </div>
+</td>
+</tr>
+<!-- Clause 22(v) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-primary font-semibold align-top">
+              Clause 22(v)
+            </td>
+<td class="py-space-md px-space-md align-top">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold block">
+                The amount of further interest remaining due and payable even in the succeeding years
+              </span>
+<span class="font-label-sm text-label-sm text-secondary mt-space-2xs block">
+                Until such date when interest dues are actually liquidated to the micro/small enterprise
+              </span>
+</td>
+<td class="py-space-md px-space-md font-data-tabular-md text-data-tabular-md text-secondary font-bold text-right align-top">
+              ₹1,18,650
+            </td>
+<td class="py-space-md px-space-md align-top">
+<div class="bg-surface-container text-on-surface-variant p-space-xs rounded text-body-sm font-body-sm leading-snug">
+                Statutory contingent computation for subsequent financial year FY 2027-28.
+              </div>
+</td>
+</tr>
+<!-- Grand Total / Statutory Addback Highlight -->
+<tr class="bg-primary/5">
+<td class="py-space-md px-space-md font-label-md text-label-md text-primary font-bold align-middle uppercase" colspan="2">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">account_balance</span>
+<span>Total Statutory Add-Back to Computation of Income (Form ITR-6 Schedule BP)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-data-tabular-lg text-data-tabular-lg text-error font-bold text-right align-middle">
+              ₹39,05,210
+            </td>
+<td class="py-space-md px-space-md align-middle">
+<div class="font-data-tabular-sm text-data-tabular-sm text-on-surface">
+<span class="font-semibold text-error">43B(h): ₹34,20,000</span> + <span class="font-semibold text-secondary">Sec 23: ₹4,85,210</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- MAIN SECTION 2: DETAILED VENDOR-LEVEL CLAUSE 22 BREAKUP & CA SCRUTINY SCHEDULE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Toolbar with Filter Tabs -->
+<div class="p-space-md bg-surface-container-low flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-2xs lg:pb-0">
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md bg-primary text-on-primary transition-colors whitespace-nowrap" type="button">
+          All Disallowed Vouchers (8)
+        </button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md bg-surface-container text-secondary hover:text-on-surface transition-colors whitespace-nowrap" type="button">
+          Disputed Holds (1)
+        </button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md bg-surface-container text-secondary hover:text-on-surface transition-colors whitespace-nowrap" type="button">
+          Post Year-End Paid (Before Filing) (2)
+        </button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md bg-surface-container text-secondary hover:text-on-surface transition-colors whitespace-nowrap" type="button">
+          Strict 15-Day Breach (5)
+        </button>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<div class="relative">
+<input class="h-9 px-space-md pl-8 bg-surface-container-lowest text-on-surface rounded font-body-sm text-body-sm w-64 focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Search Supplier / Udyam / Inv No..." type="text"/>
+<span class="material-symbols-outlined text-secondary absolute left-2 top-2 text-base">search</span>
+</div>
+<button class="h-9 px-space-sm bg-surface-container-lowest text-secondary hover:text-on-surface rounded flex items-center gap-space-2xs font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Filters</span>
+</button>
+</div>
+</div>
+<!-- Master Scrutiny Ledger Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high/30">
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider w-10 text-center">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary h-3.5 w-3.5" type="checkbox"/>
+</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider">Sr / Ledger ID</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider">MSME Supplier &amp; Udyam Reg</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider">Invoice Details</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider">Credit Terms</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider">Statutory Due</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider text-center">Overdue</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider text-right">Principal Unpaid (₹)</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider text-right">Penal Interest (₹)</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider text-center">Vault Proofs</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider">CA Scrutiny Remark</th>
+<th class="py-space-sm px-space-sm font-label-md text-label-md text-secondary uppercase tracking-wider text-center">Clearance</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<!-- Row 1: High Disallowance -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-sm text-center">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary h-3.5 w-3.5" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              #01<br/><span class="font-semibold text-on-surface">LED-8890</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Precision Tooling &amp; Castings Pvt Ltd</div>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold">UDYAM-MH-02-0049182</span>
+<span class="bg-primary/10 text-primary text-[10px] px-1 rounded font-semibold uppercase">Micro Mfg</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">INV-2026-7902</div>
+<div class="font-label-sm text-label-sm text-secondary">Dt: 14-Jan-2026</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-error-container/40 text-on-error-container font-label-sm text-label-sm px-1.5 py-0.5 rounded font-medium">
+                No Contract (15 D)
+              </span>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              29-Jan-2026
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-bold bg-error-container/20 px-1.5 py-0.5 rounded">
+                61 Days
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-md text-data-tabular-md text-error font-bold">
+              ₹18,50,000
+            </td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold">
+              ₹2,84,120
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-[11px] font-medium text-primary">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+<span>3/3 Full</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-snug">
+                Direct 43B(h) disallowance; No written contract on file; 15-day default lapsed.
+              </p>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">
+                Add-Back
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-sm text-center">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary h-3.5 w-3.5" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              #02<br/><span class="font-semibold text-on-surface">LED-8894</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Falcon Industrial Valves</div>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold">UDYAM-GJ-01-0081290</span>
+<span class="bg-primary/10 text-primary text-[10px] px-1 rounded font-semibold uppercase">Micro Mfg</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">INV-2026-8410</div>
+<div class="font-label-sm text-label-sm text-secondary">Dt: 12-Feb-2026</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-error-container/40 text-on-error-container font-label-sm text-label-sm px-1.5 py-0.5 rounded font-medium">
+                15 Days Default
+              </span>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              27-Feb-2026
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-bold bg-error-container/20 px-1.5 py-0.5 rounded">
+                32 Days
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-md text-data-tabular-md text-error font-bold">
+              ₹8,40,000
+            </td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold">
+              ₹1,12,450
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-[11px] font-medium text-primary">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+<span>3/3 Full</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-snug">
+                Critical disallowance; Banking disbursement failed on 30-Mar-2027.
+              </p>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">
+                Add-Back
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-sm text-center">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary h-3.5 w-3.5" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              #03<br/><span class="font-semibold text-on-surface">LED-8911</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Nova Tech Consultants</div>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold">UDYAM-DL-05-0012903</span>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] px-1 rounded font-semibold uppercase">Micro Service</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">INV-2026-9024</div>
+<div class="font-label-sm text-label-sm text-secondary">Dt: 24-Feb-2026</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-error-container/40 text-on-error-container font-label-sm text-label-sm px-1.5 py-0.5 rounded font-medium">
+                15 Days Default
+              </span>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              11-Mar-2026
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-bold bg-error-container/20 px-1.5 py-0.5 rounded">
+                20 Days
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-md text-data-tabular-md text-error font-bold">
+              ₹4,80,000
+            </td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold">
+              ₹54,200
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-[11px] font-medium text-secondary">
+<span class="material-symbols-outlined text-xs">pending</span>
+<span>2/3 (PO)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-snug">
+                Services rendered; PO documentation pending audit attachment.
+              </p>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">
+                Add-Back
+              </span>
+</td>
+</tr>
+<!-- Row 4: Compliant/Safe -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-primary/5">
+<td class="py-space-sm px-space-sm text-center">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary h-3.5 w-3.5 opacity-50" disabled="" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              #04<br/><span class="font-semibold text-on-surface">LED-8930</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Apex Precision Dies Pvt Ltd</div>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold">UDYAM-TN-03-0094121</span>
+<span class="bg-primary/10 text-primary text-[10px] px-1 rounded font-semibold uppercase">Micro Mfg</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">INV-2026-8841</div>
+<div class="font-label-sm text-label-sm text-secondary">Dt: 02-Mar-2026</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded font-medium">
+                30 Days Contract
+              </span>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              01-Apr-2026
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold bg-primary/10 px-1.5 py-0.5 rounded">
+                Safe (Paid)
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-md text-data-tabular-md text-primary font-bold">
+              ₹0
+            </td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-sm text-data-tabular-sm text-secondary font-medium">
+              ₹0
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-[11px] font-medium text-primary">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+<span>3/3 Full</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-snug">
+                Cleared on 28-Mar-2026 within FY; fully eligible for expense deduction.
+              </p>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">
+                Allowed
+              </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-sm text-center">
+<input checked="" class="rounded border-outline text-primary focus:ring-primary h-3.5 w-3.5" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              #05<br/><span class="font-semibold text-on-surface">LED-8955</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-snug">Kalka Corrugated Packaging</div>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-tabular-sm text-data-tabular-sm text-primary font-semibold">UDYAM-HP-01-0033281</span>
+<span class="bg-primary/10 text-primary text-[10px] px-1 rounded font-semibold uppercase">Micro Mfg</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-medium">INV-2026-9512</div>
+<div class="font-label-sm text-label-sm text-secondary">Dt: 08-Mar-2026</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-error-container/40 text-on-error-container font-label-sm text-label-sm px-1.5 py-0.5 rounded font-medium">
+                No Contract (15 D)
+              </span>
+</td>
+<td class="py-space-sm px-space-sm font-data-tabular-sm text-data-tabular-sm text-secondary">
+              23-Mar-2026
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="font-data-tabular-sm text-data-tabular-sm text-error font-bold bg-error-container/20 px-1.5 py-0.5 rounded">
+                8 Days
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-md text-data-tabular-md text-error font-bold">
+              ₹2,50,000
+            </td>
+<td class="py-space-sm px-space-sm text-right font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold">
+              ₹34,440
+            </td>
+<td class="py-space-sm px-space-sm text-center">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-[11px] font-medium text-primary">
+<span class="material-symbols-outlined text-xs">task_alt</span>
+<span>3/3 Full</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-snug">
+                Unpaid as on 31-Mar-2027; add-back required for current tax year.
+              </p>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">
+                Add-Back
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Sub-table Footer Info -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-secondary">
+        Displaying 5 of 8 scrutinised vouchers · Showing 1 fully compliant safe entry for comparative deduction validation
+      </span>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Cumulative Schedule 22 Total:</span>
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-error">₹34,20,000</span>
+</div>
+</div>
+</div>
+<!-- STATUTORY AUDITOR ENDORSEMENT & CRYPTOGRAPHIC VERIFICATION SEAL -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Checklist & Certification Statement -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">CA Scrutiny Checklist</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-2xs">
+          "Certified that the computations of disallowance under Section 43B(h) and penal interest under Section 16 &amp; Section 23 of the MSMED Act, 2006 have been audited against statutory records, Tally Prime purchase ledgers, and official Udyam portal verification logs."
+        </p>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Bank transaction ledger cross-matched for 31-March value dates</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Bilateral credit contract repositories validated for 45-day clauses</span>
+</div>
+</div>
+</div>
+<!-- CA Firm Credentials / Sign-Off Block -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-xl">account_balance</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">CA Sign-Off Authority</h3>
+</div>
+<div class="mt-space-sm p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Independent Statutory Auditor</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Sharma, Singhania &amp; Associates</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary">Chartered Accountants · ICAI Firm Reg: 014285N</span>
+</div>
+<div class="mt-space-2xs flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Unique Document Identification Number (UDIN):</span>
+<span class="font-data-tabular-sm text-data-tabular-sm font-semibold text-primary">27048291BGXYZ8492</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Signed via Digital Signature Certificate (Class 3)</span>
+<span class="material-symbols-outlined text-primary text-lg">draw</span>
+</div>
+</div>
+<!-- Cryptographic Proof Badge -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">lock_open_right</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cryptographic Proof</h3>
+</div>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">Verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mt-space-2xs">
+          asiverticals.me Statutory Trust Engine
+        </p>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-md mt-space-xs">
+<!-- Mini SVG QR Code representation -->
+<div class="w-14 h-14 bg-surface-container-lowest p-1 rounded shrink-0 flex items-center justify-center">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 24 24">
+<path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm8-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm11-2h2v2h-2v-2zm3 0h2v2h-2v-2zm-3 3h2v2h-2v-2zm3 3h2v2h-2v-2zm-3 2h2v2h-2v-2zm-3-5h2v2h-2v-2zm0 3h2v2h-2v-2zm0 2h2v2h-2v-2z"></path>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-data-tabular-sm text-data-tabular-sm text-on-surface font-semibold truncate">SHA-256: e9f4...2b01</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">MCA &amp; IT e-Filing Schema v2.8 Compatible</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-0.5">Tamper-Proof Ledger Sealed</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Validation Node: asiverticals-engine-04</span>
+<span class="font-data-tabular-sm text-data-tabular-sm text-secondary">31-Mar-2027 23:59:59 IST</span>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
