@@ -43,8 +43,8 @@ SUPABASE_JWT_SECRET=""
 DATABASE_URL="postgresql://postgres.tcrazmftnldmzsffttne:[YOUR-PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:6543/postgres?sslmode=require"
 DIRECT_DATABASE_URL="postgresql://postgres.tcrazmftnldmzsffttne:[YOUR-PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
 
-# Cloud OCR Engine (Fallback)
-GEMINI_API_KEY=""
+# Groq Cloud OCR Engine (Fallback)
+GROQ_API_KEY=""
 USE_LOCAL_VLM=false
 "@
 

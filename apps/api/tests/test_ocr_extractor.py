@@ -140,3 +140,73 @@ def test_ocr_router_file_size_limit():
     assert response.status_code == 413
     assert "File size exceeds maximum permitted limit" in response.json()["detail"]
 
+
+def test_groq_vision_mock_extraction(monkeypatch):
+    """
+    Verifies that _extract_cloud properly calls Groq API with llama-3.2-11b-vision-preview
+    and parses structured JSON invoice output.
+    """
+    from unittest.mock import MagicMock
+    from app.services.ocr_extractor import InvoiceOCRExtractor
+
+    mock_json_response = """{
+        "vendor_name": "Groq Tested Components Ltd",
+        "vendor_pan": "ABCDE1234F",
+        "vendor_gstin": "27ABCDE1234F1Z5",
+        "is_udyam_registered": true,
+        "udyam_registration_number": "UDYAM-MH-01-0099887",
+        "invoice_number": "INV-GROQ-001",
+        "invoice_date": "2026-09-13",
+        "taxable_amount": "150000.00",
+        "cgst_amount": "13500.00",
+        "sgst_amount": "13500.00",
+        "igst_amount": "0.00",
+        "total_amount": "177000.00",
+        "detected_credit_terms_days": 30,
+        "has_written_contract_indicators": true,
+        "po_reference_number": "PO-9988",
+        "tds_section_applicable": "194C",
+        "line_items": []
+    }"""
+
+    extractor = InvoiceOCRExtractor()
+    mock_client = MagicMock()
+    mock_completion = MagicMock()
+    mock_choice = MagicMock()
+    mock_choice.message.content = mock_json_response
+    mock_completion.choices = [mock_choice]
+    mock_client.chat.completions.create.return_value = mock_completion
+    extractor.groq_client = mock_client
+
+    test_img = Image.new("RGB", (300, 300), color=(255, 255, 255))
+    result = extractor._extract_cloud(test_img)
+
+    assert result.vendor_name == "Groq Tested Components Ltd"
+    assert result.vendor_pan == "ABCDE1234F"
+    assert result.total_amount == Decimal("177000.00")
+    assert result.detected_credit_terms_days == 30
+    assert mock_client.chat.completions.create.called
+    call_kwargs = mock_client.chat.completions.create.call_args[1]
+    assert call_kwargs["model"] == "llama-3.2-11b-vision-preview"
+    assert call_kwargs["response_format"] == {"type": "json_object"}
+
+
+def test_groq_vision_missing_api_key_raises_error(monkeypatch):
+    """
+    Verifies that calling _extract_cloud without GROQ_API_KEY raises RuntimeError.
+    """
+    from app.services.ocr_extractor import InvoiceOCRExtractor
+    from app.core.config import settings
+
+    monkeypatch.setattr(settings, "GROQ_API_KEY", "")
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+
+    extractor = InvoiceOCRExtractor()
+    extractor.groq_client = None
+    extractor.use_local_gpu = False
+
+    test_img = Image.new("RGB", (100, 100), color=(200, 200, 200))
+    with pytest.raises(RuntimeError, match="GROQ_API_KEY is missing"):
+        extractor._extract_cloud(test_img)
+
+

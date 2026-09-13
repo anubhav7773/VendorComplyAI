@@ -43,8 +43,8 @@ class Settings(BaseSettings):
     SUPABASE_SERVICE_ROLE_KEY: str = Field(default="")
     SUPABASE_JWT_SECRET: str = Field(default="")
 
-    # Gemini Cloud OCR Engine Settings
-    GEMINI_API_KEY: str = Field(default="")
+    # Groq Cloud OCR Engine Settings
+    GROQ_API_KEY: str = Field(default="")
     USE_LOCAL_VLM: bool = Field(default=False)
 
     # On-Premise Agent Security Salt
